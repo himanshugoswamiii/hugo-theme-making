@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{{- partial "head.html" -}}
+<body>
+
+    <!--Header using Partials-->
+    {{- partial "header.html" -}}
+    <!-- Since we're only changing the main content-->
+    <main>
+    {{- block "main" .}}{{- end}}
+    </main>
+
+    <!--Footer using Partials-->
+    {{- partial "footer.html" -}}
+    
+</body>
+</html>
